@@ -1,0 +1,17 @@
+[user]
+  name = Nick Dainty
+  email = nickdainty@gmail.com
+[push]
+  default = current
+[alias]
+  aa = add --all
+  d = diff
+  dc = diff --cached
+  cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
+  test-feature = !sh -c 'git checkout develop && git pull && git merge --ff --no-edit $1 && git push && git checkout @{-1}' -
+  checkout-feature = !sh -c 'git checkout --track -b $1 origin/$1' -
+  wip = !git add --all && git commit --message '[work in progress]'
+  unwip = reset --soft HEAD~1
+[core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+  editor = code --wait
