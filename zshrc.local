@@ -17,9 +17,9 @@ export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/ruby/include"
 export PATH=$PATH:"/usr/local/lib/ruby/gems/2.6.0/bin"
 
 # Use brew node
-export PATH="/usr/local/opt/node@12/bin:$PATH"
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/node@12/lib"
-export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/node@12/include"
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/node@14/lib"
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/node@14/include"
 
 # Add local npm binaries to path
 export PATH=$PATH:"./node_modules/.bin"
